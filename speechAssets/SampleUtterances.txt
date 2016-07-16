@@ -1,14 +1,26 @@
 GetNewFactIntent a fact
-GetNewFactIntent a space fact
+GetNewFactIntent a Warren Buffett fact
 GetNewFactIntent tell me a fact
-GetNewFactIntent tell me a space fact
+GetNewFactIntent tell me a Warren Buffett fact
 GetNewFactIntent give me a fact
-GetNewFactIntent give me a space fact
+GetNewFactIntent give me a Warren Buffett fact
 GetNewFactIntent tell me trivia
-GetNewFactIntent tell me a space trivia
+GetNewFactIntent tell me a Warren Buffett trivia
 GetNewFactIntent give me trivia
-GetNewFactIntent give me a space trivia
+GetNewFactIntent give me a Warren Buffett trivia
 GetNewFactIntent give me some information
-GetNewFactIntent give me some space information
+GetNewFactIntent give me some Warren Buffett information
 GetNewFactIntent tell me something
 GetNewFactIntent give me something
+GetNewQuoteIntent a quote
+GetNewQuoteIntent a Warren Buffett quote
+GetNewQuoteIntent tell me a quote
+GetNewQuoteIntent tell me a Warren Buffett quote
+GetNewQuoteIntent give me a quote
+GetNewQuoteIntent give me a Warren Buffett quote
+GetNewQuoteIntent tell me quotation
+GetNewQuoteIntent tell me a Warren Buffett quotation
+GetNewQuoteIntent give me quotation
+GetNewQuoteIntent give me some Warren Buffett information
+GetNewQuoteIntent tell me something
+GetNewQuoteIntent give me something

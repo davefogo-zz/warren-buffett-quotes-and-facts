@@ -14,17 +14,20 @@
  *
  * Examples:
  * One-shot model:
- *  User: "Alexa, ask Space Geek for a space fact"
- *  Alexa: "Here's your space fact: ..."
+ *  User: "Alexa, ask Warren Buffet Quote for a fact"
+ *  Alexa: "Here's your Warren Buffet fact: ..."
+ *
+ *  User: "Alexa, ask Warren Buffet Quote for a quote"
+ *  Alexa: "Here's your Warren Buffet quote: ..."
  */
 
 /**
  * App ID for the skill
  */
-var APP_ID = undefined; //OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
+var APP_ID = undefined; //OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[arn:aws:lambda:us-east-1:865873523851:function:mySecondFactSkill]";
 
 /**
- * Array containing space facts.
+ * Array containing Warren Buffett facts.
  */
 var FACTS = [
     "A year on Mercury is just 88 days long.",
@@ -48,7 +51,7 @@ var FACTS = [
 var AlexaSkill = require('./AlexaSkill');
 
 /**
- * SpaceGeek is a child of AlexaSkill.
+ * WarrenBuffetQuote is a child of AlexaSkill.
  * To read more about inheritance in JavaScript, see the link below.
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Inheritance
@@ -119,4 +122,3 @@ exports.handler = function (event, context) {
     var fact = new Fact();
     fact.execute(event, context);
 };
-
