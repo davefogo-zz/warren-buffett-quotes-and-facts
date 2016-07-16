@@ -20,7 +20,7 @@
  *  User: "Alexa, ask Warren Buffet Quote for a quote"
  *  Alexa: "Here's your Warren Buffet quote: ..."
  */
-
+ var ua = require('universal-analytics');
 /**
  * App ID for the skill
  */
@@ -148,6 +148,22 @@ var AlexaSkill = require('./AlexaSkill');
 var Quote = function () {
     AlexaSkill.call(this, APP_ID);
 };
+
+// Google Analytics
+
+// Declare the intentTrackingID's Google Tracking ID
+
+var intentTrackingID = ua(UA-80883144-1)
+
+// report a blank value
+intentTrackingID.event("invalid request","blank value").send();
+
+// report a success
+var requestedData = ("inputDate: " + inputDate + " myVar: " + myVar).toString();
+intentTrackingID.event("success", requestedData).send();
+
+// report a failure
+intentTrackingID.event("error", error.toString()).send();
 
 // Extend AlexaSkill
 Quote.prototype = Object.create(AlexaSkill.prototype);
